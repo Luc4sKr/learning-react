@@ -1,0 +1,30 @@
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-top {
+    background-color: #24292e;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar > ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar > ul > li {
+    margin-right: 15px;
+}
+
+.buttons > Button {
+    margin-left: 15px;
+}

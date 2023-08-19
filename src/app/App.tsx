@@ -1,9 +1,8 @@
-import { HelloWorld } from "./shared/components/helloWorld/HelloWorld";
-import './App.css'
+import { RoutesPath } from "./routes";
 
 function App() {
 	return (
-		<HelloWorld />
+		<RoutesPath />
 	)
 }
 
