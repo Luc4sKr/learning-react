@@ -1,29 +1,20 @@
 import { Link } from "react-router-dom";
 
-import Button from '@mui/material/Button';
-
-import "./Navbar.css";
+import style from "./Navbar.module.css";
 
 export const Navbar = () => {
     return (
-        <header className="header-top">
-            <nav className="navbar">
+        <header className={style.headerTop}>
+            <nav className={style.navbar}>
                 <ul>
                     <li>
-                        <Link to={"/"} className="link">Home</Link>
+                        <Link to={"/"} className={style.link}>Home</Link>
                     </li>
                     <li>
-                        <Link to={"/about"} className="link">About</Link>
-                    </li>
-                    <li>
-                        <Link to={"/contact"} className="link">Contact</Link>
+                        <Link to={"/lessons"} className={style.link}>Lessons</Link>
                     </li>
                 </ul>
             </nav>
-            <div className="buttons">
-                <Button variant="contained">Login</Button>
-                <Button variant="contained">Register</Button>
-            </div>
         </header>
     )
 }
