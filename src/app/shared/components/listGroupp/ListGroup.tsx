@@ -1,5 +1,16 @@
-function ListGroup() {
-    return <h1>List Group</h1>
-}
+export const ListGroup = () => {
+    const items = ["Brasil", "Canadá", "EUA"];
 
-export default ListGroup;
+    return (
+        <>
+            <h1>List</h1>
+
+            {items.length === 0 ? <p>No intem found</p> : null}
+            <ul>
+                {items.map((item) => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
+        </>
+    )
+}
